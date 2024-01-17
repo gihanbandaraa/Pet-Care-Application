@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer_register"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/registerback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_semibold"
+                android:text="CUSTOMER \nREGISTRATION"
+                android:textAlignment="center"
+                android:textColor="#001B60"
+                android:textSize="28sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvCustImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/baseline_person_2_24"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/imbCustImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#001B60"
+                android:src="@drawable/baseline_camera_alt_24"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/edtNameRegCust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/oswald_semibold"
+                android:hint="Enter Your Name"
+                android:inputType="text"
+                android:textColor="#001B60"
+                android:textColorHint="#001B60" />
+
+            <EditText
+                android:id="@+id/edtAddressRegCust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_semibold"
+                android:hint="Enter Your Address"
+                android:layout_marginTop="10dp"
+                android:textColor="#001B60"
+                android:textColorHint="#001B60"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/edtPhoneRegCust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_semibold"
+                android:hint="Enter Your Phone Number"
+                android:textColor="#001B60"
+                android:textColorHint="#001B60"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/edtEmailRegCust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_semibold"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#001B60"
+                android:textColorHint="#001B60" />
+
+            <EditText
+                android:id="@+id/edtPassRegCust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_semibold"
+                android:hint="Enter Your Password"
+                android:inputType="numberPassword"
+                android:textColor="#001B60"
+                android:textColorHint="#001B60" />
+
+            <EditText
+                android:id="@+id/edtCPassRegCust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_semibold"
+                android:hint="Confirm Your Password"
+                android:inputType="numberPassword"
+                android:textColor="#001B60"
+                android:textColorHint="#001B60" />
+
+            <Button
+                android:id="@+id/btnRegCust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#001B60"
+                android:text="REGISTER"
+                android:textSize="24sp" />
+
+            <ProgressBar
+                android:id="@+id/pBCustReg"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:progressTint="#001B60"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

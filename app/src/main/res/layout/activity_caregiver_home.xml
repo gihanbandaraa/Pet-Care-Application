@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caregiver_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/homecust">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imvCareProfile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/baseline_person_2_24" />
+
+                <TextView
+                    android:id="@+id/txvWelcomeCare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/oswald_semibold"
+                    android:textColor="#001B60"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txvViewJobs"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="40dp"
+                android:background="#A17280A3"
+                android:fontFamily="@font/oswald_semibold"
+                android:paddingTop="50dp"
+
+                android:paddingBottom="50dp"
+                android:text="FIND JOB"
+                android:textAlignment="center"
+                android:textColor="#001B60"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txvActiveJob"
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="40dp"
+                android:background="#A17280A3"
+                android:fontFamily="@font/oswald_semibold"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:text="JOB PROCESS"
+                android:textAlignment="center"
+                android:textColor="#001B60"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+    android:id="@+id/logout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text="Logout"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.74"
+    android:onClick="logout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pet Care</string>
+
+    <string-array name="years">
+        <item>Less than 1 year</item>
+        <item>1-3 years</item>
+        <item>3-5 years</item>
+        <item>More than 5 years</item>
+    </string-array>
+</resources>

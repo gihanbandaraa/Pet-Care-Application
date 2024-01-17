@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".choose_login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topcorner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_semibold"
+        android:text="Please Choose \nType"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/oswald_semibold"
+                android:text="PET CARE"
+                android:textAlignment="center"
+                android:textColor="#001B60"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnRegAsCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#FFE0F3FF"
+                android:drawableRight="@drawable/baseline_login_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="#001B60"
+                android:fontFamily="@font/oswald_semibold"
+                android:text="REGISTER AS CUSTOMER"
+                android:textAlignment="center"
+                android:textColor="#001B60"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:iconTint="@color/material_dynamic_neutral0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/oswald_semibold"
+                    android:gravity="center"
+                    android:text="already have an account?"
+                    android:textColor="#001B60"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnLogAsCust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/oswald_semibold"
+                    android:text="Login Now"
+                    android:textColor="#001B60"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegAsCaregiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#FFE0F3FF"
+                android:drawableRight="@drawable/baseline_login_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="#001B60"
+                android:fontFamily="@font/oswald_semibold"
+                android:text="REGISTER AS CAREGIVER"
+                android:textAlignment="center"
+                android:textColor="#001B60"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:iconTint="@color/material_dynamic_neutral0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/oswald_semibold"
+                    android:gravity="center"
+                    android:text="already have an account?"
+                    android:textColor="#001B60"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnLogAsCare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/oswald_semibold"
+                    android:gravity="center"
+                    android:text="Login Now"
+                    android:textColor="#001B60"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
